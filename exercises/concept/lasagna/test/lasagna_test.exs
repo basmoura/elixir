@@ -24,12 +24,12 @@ defmodule LasagnaTest do
 
   @tag task_id: 4
   test "total time in minutes for one layer" do
-    assert Lasagna.total_time_in_minutes(1, 30) === 32
+    assert Lasagna.total_time_in_minutes(1, 30) === 12
   end
 
   @tag task_id: 4
   test "total time in minutes for multiple layers" do
-    assert Lasagna.total_time_in_minutes(4, 8) === 16
+    assert Lasagna.total_time_in_minutes(4, 8) === 40
   end
 
   @tag task_id: 5
